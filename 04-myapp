@@ -1,0 +1,25 @@
+#!/usr/bin/env python3
+
+import typer
+
+app = typer.Typer()
+
+
+@app.command()
+def hello(name: str):
+    print(f"hello {name}")
+    
+@app.command()
+def bye():
+	'bye function' # description of the function
+	print("bye")
+
+
+@app.command()
+def adder(a,b):
+	'adder'
+	print(f"{a} + {b} = {a+b}")
+
+
+if __name__ == "__main__":
+    app()
