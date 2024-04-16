@@ -11,7 +11,7 @@ def alive():
 @app.get("/power/{n}")	
 def power(n: int ):
 	'This function computes the power 2 of n'
-	return({"nummber":n, "power":n**2})
+	return({"number":n, "power":n**2})
 	
 class Operand(BaseModel):
 	a: int
